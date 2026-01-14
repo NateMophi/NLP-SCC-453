@@ -1,3 +1,4 @@
+'''Q3'''
 def EndOfSentence(sentence):
     terminals = 0
     n = len(sentence)
@@ -10,6 +11,17 @@ def EndOfSentence(sentence):
             terminals+=1
     return terminals
 
-print(EndOfSentence("The sun will rise again. Formula 1 starts tomorrow! I think McLaren will win it again this year"))
+# print(EndOfSentence("The sun will rise again. Formula 1 starts tomorrow! I think McLaren will win it again this year"))
+
+'''Q4'''
+spaces_count, hyphen_count  = 0, 0 
+with open('words.txt', "r") as file:
+    for line in file:
+        for str in line:
+            if str in "-":
+                hyphen_count+=1
+            if str.isspace():
+                spaces_count+=1
+print(spaces_count, hyphen_count)
 
 
