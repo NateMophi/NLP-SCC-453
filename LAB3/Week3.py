@@ -44,3 +44,15 @@ def SentiAnalysis(text):
             score +=1
 
     return max(1, min(5, score))
+
+test_sentences = [
+    "The service was okay and the food arrived on time.",
+    "I absolutely love GitHub, it is the best!",
+    "She is very pretty!",
+    "The MoYu WrM is a great 3x3 Cube"
+]
+
+print(f"{'Sentence':<50} | {'Score'}")
+print("-" * 60)
+for s in test_sentences:
+    print(f"{s:<50} | {SentiAnalysis(s)}")
