@@ -16,7 +16,7 @@ def SentiAnalysis(text):
     text = text.lower().strip()
     
     # Word Bank
-    pos_words = {'great', 'easy', 'helpful', 'fast', 'good', 'nice', 'happy', 'love', 'amazing'}
+    pos_words = {'great', 'easy', 'helpful', 'fast', 'good', 'pretty', 'nice', 'happy', 'love', 'amazing'}
     neg_words = {'terrible', 'broken', 'fail', 'slow', 'expensive', 'bad', 'poor', 'hate', 'disaster', 'waste'}
     negators = {'not', 'wasnt', 'shouldnt', 'didnt', 'never', 'wont', 'cant'}
 
