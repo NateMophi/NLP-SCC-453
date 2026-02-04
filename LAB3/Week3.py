@@ -56,3 +56,5 @@ print(f"{'Sentence':<50} | {'Score'}")
 print("-" * 60)
 for s in test_sentences:
     print(f"{s:<50} | {SentiAnalysis(s)}")
+
+print("Hi Parand")
